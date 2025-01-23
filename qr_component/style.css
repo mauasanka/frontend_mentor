@@ -1,15 +1,15 @@
-    @font-face {
+    /* @font-face {
         font-family:Outfit;
         src: url(fonts/Outfit-Bold.ttf);
-    }
+    } */
    
    *{ margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: sans-serif;
     }
     
     body {
-      font-family: "Outfit";
       height: 100vh;
       display: flex;
       align-items: center;
@@ -24,36 +24,44 @@
     }
 
     .img-bg .qr-image{
-      height: 170 hsl(218, 44%, 22%);
-      width: 170px;
-      object-fit: cover;
-      border-radius: 5px;
+     width: 100%;
+     border-radius: 10px;
     }
     .card {
-      max-width: 190px;
-      width: 100%;
-      max-height: 350px;
-      height: 310px;
-      background-color:  hsl(0, 0%, 100%);
-      border-radius: 13px;
-      padding: 10px;
-      box-shadow: 1px 10px 1px  rgba(1, 0, 0, 0. gray);
+      width: 320px;
+      height: 499px;
+      box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
     }
     
+
   h1 {
-    position:relative;
-    top: 10px;
-    font-size: 14px;
-    color: #191919;
-    text-align: center;;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: hsl(218, 44%, 22%);
   }
-  
+
+
   p {
-    font-size: 10px;
+    font-size: 15px;
     color: hsl(218, 6%, 73%);
     margin: 0;
     text-align: center;
     position: relative;
+    top: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: hsl(216, 15%, 48%);
     top: 20px;
   }
 
